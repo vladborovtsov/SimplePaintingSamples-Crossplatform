@@ -7,16 +7,22 @@
 //
 
 #import "AppDelegate.h"
+#import "PaintView.h"
 
 @interface AppDelegate ()
 
 @property (weak) IBOutlet NSWindow *window;
+@property (weak) IBOutlet PaintView *paintView;
+@property (strong) NSTimer *timer;
 @end
 
 @implementation AppDelegate
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
-  // Insert code here to initialize your application
+  __weak typeof(self) weakSelf = self;
+  self.timer = [NSTimer scheduledTimerWithTimeInterval:1.0/60.0 repeats:YES block:^(NSTimer *timer) {
+    [weakSelf.paintView tick];
+  }];
 }
 
 

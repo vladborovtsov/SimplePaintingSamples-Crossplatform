@@ -11,4 +11,6 @@ IB_DESIGNABLE
 
 @interface PaintView : NSView
 
+- (void) tick;
+
 @end
