@@ -1,0 +1,300 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A4BF9CA51E5F0EBE002E1197 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A4BF9CA41E5F0EBE002E1197 /* AppDelegate.m */; };
+		A4BF9CA81E5F0EBE002E1197 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A4BF9CA71E5F0EBE002E1197 /* main.m */; };
+		A4BF9CAA1E5F0EBE002E1197 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4BF9CA91E5F0EBE002E1197 /* Assets.xcassets */; };
+		A4BF9CAD1E5F0EBE002E1197 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4BF9CAB1E5F0EBE002E1197 /* MainMenu.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A4BF9CA01E5F0EBE002E1197 /* SimplePainting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimplePainting.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4BF9CA31E5F0EBE002E1197 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A4BF9CA41E5F0EBE002E1197 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A4BF9CA71E5F0EBE002E1197 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A4BF9CA91E5F0EBE002E1197 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A4BF9CAC1E5F0EBE002E1197 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		A4BF9CAE1E5F0EBE002E1197 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A4BF9C9D1E5F0EBE002E1197 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A4BF9C971E5F0EBE002E1197 = {
+			isa = PBXGroup;
+			children = (
+				A4BF9CA21E5F0EBE002E1197 /* SimplePainting */,
+				A4BF9CA11E5F0EBE002E1197 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A4BF9CA11E5F0EBE002E1197 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A4BF9CA01E5F0EBE002E1197 /* SimplePainting.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A4BF9CA21E5F0EBE002E1197 /* SimplePainting */ = {
+			isa = PBXGroup;
+			children = (
+				A4BF9CA31E5F0EBE002E1197 /* AppDelegate.h */,
+				A4BF9CA41E5F0EBE002E1197 /* AppDelegate.m */,
+				A4BF9CA91E5F0EBE002E1197 /* Assets.xcassets */,
+				A4BF9CAB1E5F0EBE002E1197 /* MainMenu.xib */,
+				A4BF9CAE1E5F0EBE002E1197 /* Info.plist */,
+				A4BF9CA61E5F0EBE002E1197 /* Supporting Files */,
+			);
+			path = SimplePainting;
+			sourceTree = "<group>";
+		};
+		A4BF9CA61E5F0EBE002E1197 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A4BF9CA71E5F0EBE002E1197 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A4BF9C9F1E5F0EBE002E1197 /* SimplePainting */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4BF9CB11E5F0EBE002E1197 /* Build configuration list for PBXNativeTarget "SimplePainting" */;
+			buildPhases = (
+				A4BF9C9C1E5F0EBE002E1197 /* Sources */,
+				A4BF9C9D1E5F0EBE002E1197 /* Frameworks */,
+				A4BF9C9E1E5F0EBE002E1197 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SimplePainting;
+			productName = SimplePainting;
+			productReference = A4BF9CA01E5F0EBE002E1197 /* SimplePainting.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A4BF9C981E5F0EBE002E1197 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Vlad Borovtsov";
+				TargetAttributes = {
+					A4BF9C9F1E5F0EBE002E1197 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 75G4G5P64J;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = A4BF9C9B1E5F0EBE002E1197 /* Build configuration list for PBXProject "SimplePainting" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A4BF9C971E5F0EBE002E1197;
+			productRefGroup = A4BF9CA11E5F0EBE002E1197 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A4BF9C9F1E5F0EBE002E1197 /* SimplePainting */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A4BF9C9E1E5F0EBE002E1197 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4BF9CAA1E5F0EBE002E1197 /* Assets.xcassets in Resources */,
+				A4BF9CAD1E5F0EBE002E1197 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A4BF9C9C1E5F0EBE002E1197 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4BF9CA81E5F0EBE002E1197 /* main.m in Sources */,
+				A4BF9CA51E5F0EBE002E1197 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A4BF9CAB1E5F0EBE002E1197 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A4BF9CAC1E5F0EBE002E1197 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A4BF9CAF1E5F0EBE002E1197 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		A4BF9CB01E5F0EBE002E1197 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		A4BF9CB21E5F0EBE002E1197 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 75G4G5P64J;
+				INFOPLIST_FILE = SimplePainting/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ru.borovcov.SimplePainting;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A4BF9CB31E5F0EBE002E1197 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 75G4G5P64J;
+				INFOPLIST_FILE = SimplePainting/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ru.borovcov.SimplePainting;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A4BF9C9B1E5F0EBE002E1197 /* Build configuration list for PBXProject "SimplePainting" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4BF9CAF1E5F0EBE002E1197 /* Debug */,
+				A4BF9CB01E5F0EBE002E1197 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A4BF9CB11E5F0EBE002E1197 /* Build configuration list for PBXNativeTarget "SimplePainting" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4BF9CB21E5F0EBE002E1197 /* Debug */,
+				A4BF9CB31E5F0EBE002E1197 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A4BF9C981E5F0EBE002E1197 /* Project object */;
+}
