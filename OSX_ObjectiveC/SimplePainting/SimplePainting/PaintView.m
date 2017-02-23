@@ -42,7 +42,7 @@
   
   NSRect bounds = self.bounds;
   NSPoint center = NSMakePoint(bounds.size.width/2.0, bounds.size.height/2.0);
-  CGFloat circleRadius = bounds.size.height/3.0;
+  CGFloat circleRadius = bounds.size.height/5.0;
   
   //
   [[NSColor blueColor] setStroke];
@@ -77,11 +77,11 @@
   [line1 stroke];
   
   NSBezierPath *line1_reversePart = [NSBezierPath bezierPath];
-  CGFloat line1_reversePartLen = line1Lenght / 3.0;
+  CGFloat line1_reversePartLen = line1Lenght/2.0 / 3.0;
   
   NSPoint line1ReversePartEnd = NSMakePoint(
-                                            pointOnCircleCenter.x + line1_reversePartLen * sin(DEGREES_TO_RADIANS(self.line1Angle + 180.*3.0/2)),
-                                            pointOnCircleCenter.y + line1_reversePartLen * cos(DEGREES_TO_RADIANS(self.line1Angle + 180.*3.0/2))
+                                            pointOnCircleCenter.x + line1_reversePartLen * sin(DEGREES_TO_RADIANS(self.line1Angle + 190.*3.0)),
+                                            pointOnCircleCenter.y + line1_reversePartLen * cos(DEGREES_TO_RADIANS(self.line1Angle + 190.*3.0))
   );
   [line1_reversePart moveToPoint:pointOnCircleCenter];
   [line1_reversePart lineToPoint:line1ReversePartEnd];
