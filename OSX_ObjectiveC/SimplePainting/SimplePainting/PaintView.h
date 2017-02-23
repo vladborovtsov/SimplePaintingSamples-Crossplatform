@@ -7,6 +7,7 @@
 //
 
 #import <Cocoa/Cocoa.h>
+IB_DESIGNABLE
 
 @interface PaintView : NSView
 
