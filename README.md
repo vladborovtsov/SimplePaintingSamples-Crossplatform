@@ -1,5 +1,5 @@
 # SimplePaintingSamples-Crossplatform
 Just my programmatic painting playground
 
-OBJECTIVE C / OSX: 
+## OSX_ObjectiveC/SimplePainting: 
   At least osx 10.12 is required. 
