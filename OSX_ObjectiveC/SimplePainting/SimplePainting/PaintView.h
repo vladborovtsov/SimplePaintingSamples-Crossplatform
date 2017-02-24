@@ -11,6 +11,17 @@ IB_DESIGNABLE
 
 @interface PaintView : NSView
 
+@property (nonatomic, assign) BOOL longPathTrack;
+@property (nonatomic, assign) BOOL shortPathTrack;
+@property (nonatomic, assign) BOOL longPathDisplay;
+@property (nonatomic, assign) BOOL shortPathDisplay;
+
+
+@property (nonatomic, assign) BOOL oppositePath;
+
 - (void) tick;
+- (void) reset;
+- (void) clearShortPath;
+- (void) clearLongPath;
 
 @end

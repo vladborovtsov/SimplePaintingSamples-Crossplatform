@@ -21,16 +21,13 @@
 
 - (void) awakeFromNib {
   [super awakeFromNib];
-  self.pointOnCircleAngle = 0.0f;
-  self.line1Angle = 45.0f;
-  
-  self.pointsSet = [[NSMutableSet alloc] init];
-  self.pointsSetReverse = [[NSMutableSet alloc] init];
+  [self reset];
+  self.longPathTrack = self.longPathDisplay = self.shortPathTrack = self.shortPathDisplay = YES;
 }
 
 - (void) tick {
   self.pointOnCircleAngle+=1.0;
-  self.line1Angle+=1.0;
+  self.line1Angle+=3.0;
   
   //Sine speed
   self.line1Angle+=0.05;
@@ -43,6 +40,22 @@
     self.pointOnCircleAngle-=360.0;
   }
   [self setNeedsDisplay:YES];
+}
+
+- (void) reset {
+  self.pointOnCircleAngle = 0.0f;
+  self.line1Angle = 45.0f;
+  
+  self.pointsSet = [[NSMutableSet alloc] init];
+  self.pointsSetReverse = [[NSMutableSet alloc] init];
+}
+
+- (void) clearShortPath {
+  [self.pointsSetReverse removeAllObjects];
+}
+
+- (void) clearLongPath {
+  [self.pointsSet removeAllObjects];
 }
 
 - (void)drawRect:(NSRect)dirtyRect {
@@ -98,48 +111,51 @@
   [line1_reversePart stroke];
   
   //Draw final points
-  //[self.pointsSet addObject:[NSValue valueWithPoint:line1ReversePartEnd]];
-  line1Part1End.x = trunc(line1Part1End.x);
-  line1Part1End.y = trunc(line1Part1End.y);
-  NSValue *v = [NSValue valueWithPoint:line1Part1End];
-  if ([self.pointsSet containsObject:v]) {
-    [self.pointsSet removeObject:v];
-  }
-  else {
-    [self.pointsSet addObject:v];
-    //NSLog(@"Count: %ld", self.pointsSet.count);
-    //NSLog(@"P: %@", v);
-  }
-  
-  //Reverse stuff
-  line1ReversePartEnd.x = trunc(line1ReversePartEnd.x);
-  line1ReversePartEnd.y = trunc(line1ReversePartEnd.y);
-  NSValue *v2 = [NSValue valueWithPoint:line1ReversePartEnd];
-  if ([self.pointsSetReverse containsObject:v2]) {
-    [self.pointsSetReverse removeObject:v2];
-  }
-  else {
-    [self.pointsSetReverse addObject:v2];
-  }
-  
-  //1
-  for (NSValue *pointVal in self.pointsSet) {
-    NSPoint p = [pointVal pointValue];
+  if (self.longPathTrack) {
+    line1Part1End.x = trunc(line1Part1End.x);
+    line1Part1End.y = trunc(line1Part1End.y);
+    NSValue *v = [NSValue valueWithPoint:line1Part1End];
+    if ([self.pointsSet containsObject:v]) {
+      [self.pointsSet removeObject:v];
+    }
+    else {
+      [self.pointsSet addObject:v];
+    }
     
-    NSBezierPath *pbzp = [NSBezierPath bezierPath];
-    [pbzp appendBezierPathWithArcWithCenter:p radius:2 startAngle:0 endAngle:360];
-    [[NSColor grayColor] setStroke];
-    [pbzp stroke];
   }
-  
-  //2
-  for (NSValue *pointValReverse in self.pointsSetReverse) {
-    NSPoint p = [pointValReverse pointValue];
-    
-    NSBezierPath *pbzp = [NSBezierPath bezierPath];
-    [pbzp appendBezierPathWithArcWithCenter:p radius:2 startAngle:0 endAngle:360];
-    [[NSColor blackColor] setStroke];
-    [pbzp stroke];
+  if (self.longPathDisplay) {
+    for (NSValue *pointVal in self.pointsSet) {
+      NSPoint p = [pointVal pointValue];
+      
+      NSBezierPath *pbzp = [NSBezierPath bezierPath];
+      [pbzp appendBezierPathWithArcWithCenter:p radius:2 startAngle:0 endAngle:360];
+      [[NSColor grayColor] setStroke];
+      [pbzp stroke];
+    }
+  }
+
+  if (self.shortPathTrack) {
+    //Reverse stuff
+    line1ReversePartEnd.x = trunc(line1ReversePartEnd.x);
+    line1ReversePartEnd.y = trunc(line1ReversePartEnd.y);
+    NSValue *v2 = [NSValue valueWithPoint:line1ReversePartEnd];
+    if ([self.pointsSetReverse containsObject:v2]) {
+      [self.pointsSetReverse removeObject:v2];
+    }
+    else {
+      [self.pointsSetReverse addObject:v2];
+    }
+  }
+  if (self.shortPathDisplay) {
+    //2
+    for (NSValue *pointValReverse in self.pointsSetReverse) {
+      NSPoint p = [pointValReverse pointValue];
+      
+      NSBezierPath *pbzp = [NSBezierPath bezierPath];
+      [pbzp appendBezierPathWithArcWithCenter:p radius:2 startAngle:0 endAngle:360];
+      [[NSColor blackColor] setStroke];
+      [pbzp stroke];
+    }
   }
 }
 
